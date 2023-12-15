@@ -42,7 +42,7 @@ body
     justify-content: center;
     align-items: center;
 }
-/*
+
 .re_container
 {
     display: flex;
@@ -70,15 +70,16 @@ body
     font-family: 'K2D', sans-serif;
     font-size: 6rem;
     color: white;
+    font-weight: bolder;
 }
 .re_temp
 {
-    color: white;
+    color: var(--blue-secondary);
     font-size: 1.5rem;
     font-family: 'K2D', sans-serif;
     font-weight: 500;
 }
-*/
+
 
 @media(max-width: 880px)
 {
@@ -98,7 +99,7 @@ body
 
 
 
-
+/*
 
 .re_container
 {
