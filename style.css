@@ -13,3 +13,75 @@ font-family: 'Rubik', sans-serif;
     text-decoration: none;
     overflow-x: hidden;
 }
+body
+{
+    overflow-x: hidden;
+}
+:root
+{
+    --blue-primary:#011c40;
+    --blue-secondary:#03658c;
+    --blue-smoth:#04b2d9;
+    --green-smooth: #04d98b;
+    --green-lima: #04d9b2;
+}
+
+.apresentation
+{
+
+    width: 100%;
+    background-color: var(--blue-primary);
+}
+.relogio
+{
+    height: 100vh;
+    width: 100%;
+    background: var(--blue-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.re_container
+{
+    display: flex;
+    gap: 5rem;
+    padding: 30px;
+    border-radius: 15px;
+    background: linear-gradient(280deg, var(--blue-secondary), var(--blue-primary));
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+.re_counters
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+    background-color: black;
+}
+.re_numbers
+{
+    font-family: 'K2D', sans-serif;
+    font-size: 6rem;
+    color: white;
+}
+.re_temp
+{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
+}
+
+@media(max-width: 880px)
+{
+    .re_container
+    {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
