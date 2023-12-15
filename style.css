@@ -84,6 +84,6 @@ body
     {
         flex-direction: column;
         gap: 3rem;
-        height: 30vh;
+        height: 100vh;
     }
 }
