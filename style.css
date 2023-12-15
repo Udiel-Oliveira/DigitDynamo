@@ -34,7 +34,6 @@ body
 .relogio
 {
     height: 100vh;
-    flex-direction: column;
     width: 100%;
     background: var(--blue-primary);
 }
@@ -117,7 +116,7 @@ body
     {
         flex-direction: column;
         gap: 3rem;
-        height: 90%;
+        height: 100%;
         width: 30vh;
         justify-content: space-between;
         align-items: center;
