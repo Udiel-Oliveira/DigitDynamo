@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=K2D:wght@400;800&family=Rubik:wght@300;700&display=swap');
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'K2D', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    overflow-x: hidden;
+}
