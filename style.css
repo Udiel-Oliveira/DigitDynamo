@@ -132,6 +132,33 @@ body
         width: 70%;
     }
 }
+@media(max-width: 500px)
+{
+    .re_content
+    {
+        justify-content: none;
+        height: 85vh;
+    }
+    .re_container
+    {
+        flex-direction: column;
+        gap: 3rem;
+        height: 100%;
+        width: 30vh;
+        justify-content: space-between;
+        align-items: center;
+        margin:0rem;
+    }
+    .re_counters
+    {
+        gap: 0rem;
+        width: 100%;
+    }
+    .title
+    {
+        width: 70%;
+    }
+}
 
 
 
