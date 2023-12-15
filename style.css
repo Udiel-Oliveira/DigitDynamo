@@ -31,6 +31,7 @@ body
 
     width: 100%;
     background-color: var(--blue-primary);
+    height: 100vh;
 }
 .relogio
 {
@@ -83,5 +84,6 @@ body
     {
         flex-direction: column;
         gap: 3rem;
+        height: 30vh;
     }
 }
