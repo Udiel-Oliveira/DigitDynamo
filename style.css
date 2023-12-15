@@ -71,6 +71,7 @@ body
     font-size: 6rem;
     color: white;
     font-weight: bolder;
+    overflow-y: hidden;
 }
 .re_temp
 {
@@ -78,6 +79,7 @@ body
     font-size: 1.5rem;
     font-family: 'K2D', sans-serif;
     font-weight: 500;
+    overflow-y: hidden;
 }
 
 
@@ -88,11 +90,15 @@ body
         flex-direction: column;
         gap: 3rem;
         height: 90%;
-        margin:0rem
+        width: 30vh;
+        justify-content: center;
+        align-items: center;
+        margin:0rem;
     }
     .re_counters
     {
         gap: 0rem;
+        width: 100%;
     }
 }
 
