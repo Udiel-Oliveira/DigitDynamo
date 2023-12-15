@@ -90,6 +90,10 @@ body
         height: 90%;
         margin:0rem
     }
+    .re_counters
+    {
+        gap: 0rem;
+    }
 }
 
 
