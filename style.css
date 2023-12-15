@@ -31,7 +31,6 @@ body
 
     width: 100%;
     background-color: var(--blue-primary);
-    height: 100vh;
 }
 .relogio
 {
@@ -91,7 +90,7 @@ body
         gap: 3rem;
         height: 90%;
         width: 30vh;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         margin:0rem;
     }
