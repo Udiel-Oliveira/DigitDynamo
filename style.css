@@ -28,7 +28,6 @@ body
 
 .apresentation
 {
-    height: 100vh;
     width: 100%;
     background-color: var(--blue-primary);
 }
@@ -38,7 +37,7 @@ body
     width: 100%;
     background: var(--blue-primary);
 }
-.re_content
+.re_content, .cr_container
 {
     height: 75vh;
     flex-direction: column;
@@ -119,6 +118,105 @@ body
 }
 
 
+
+.cronometro
+{
+    height: 100vh;
+    width: 100%;
+    background: var(--blue-primary);
+    
+}
+
+.cr_content
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+    background: linear-gradient(280deg, var(--blue-secondary), var(--blue-primary));
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#timer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 350px;
+    width: 350px;
+    border: 5px solid white;
+    border-radius: 50%;
+    font-family: 'K2D', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--blue-smoth);
+    margin-bottom: 1.5rem;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.actions
+{
+    display: flex;
+    gap: 0.5rem;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+}
+.actions button
+{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.actions button:hover
+{
+    transform: scale(1.1);
+    background-color: var(--blue-secondary);
+    color: black;
+}
+.control
+{
+    margin-left: 2rem;
+}
+
+#cr_marks_list
+{
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
+    max-height: 270px;
+    border-bottom: 2px solid white;
+}
+#cr_marks_list p
+{
+    margin-bottom: 5px;
+    background: linear-gradient(to right, black, transparent);
+    
+}
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 880px)
 {
     .re_container
@@ -139,6 +237,25 @@ body
     .title
     {
         width: 70%;
+    }
+
+    /*Cronometro*/
+
+    .cr_content
+    {
+        width: 90%;
+        height: 80%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .actions button
+    {
+        width: 20vw;
+    }
+    .control
+    {
+        margin-left: 0rem;
     }
 }
 @media(max-width: 500px)
@@ -198,6 +315,100 @@ body
 
 
 /*
+
+
+
+
+.cronometro
+{
+    height: 100vh;
+    width: 100%;
+    background: var(--blue-primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cr_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    background: linear-gradient(280deg, var(--blue-secondary), var(--blue-primary));
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#timer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 250px;
+    width: 250px;
+    border: 5px solid white;
+    border-radius: 50%;
+    font-family: 'K2D', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--blue-smoth);
+    margin-bottom: 1.5rem;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.actions
+{
+    display: flex;
+    gap: 0.5rem;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+}
+.actions button
+{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: .6rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all .5ms ease-in-out;
+}
+.actions button:hover
+{
+    transform: scale(1.1);
+    background-color: var(--blue-secondary);
+    color: black;
+}
+
+#cr_marks_list
+{
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+
+
 
 
 

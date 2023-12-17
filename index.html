@@ -21,36 +21,69 @@
 
     </header>
     <main>
-        <section class="apresentation">
-
-        </section>
-        <section class="relogio">
-
-            <div class="title">
-                <h1 class="re_title">Relógio</h1>             
-            </div>
-            
-            <div class="re_content">
-                <div class="re_container">
-
-                    <div class="re_counters">
-                        <span class="re_numbers" id="hours">00</span>
-                        <span class="re_temp">Horas</span>
-                    </div>
+    <section class="apresentation">
+    </section>
     
-                    <div class="re_counters">
-                        <span class="re_numbers" id="minutes">00</span>
-                        <span class="re_temp">Minutos</span>
-                    </div>
-    
-                    <div class="re_counters">
-                        <span class="re_numbers" id="seconds">00</span>
-                        <span class="re_temp">Segundos</span>
-                    </div>
+    <section class="relogio">
+
+        <div class="title">
+            <h1 class="re_title">Relógio</h1>             
+        </div>
+        
+        <div class="re_content">
+            <div class="re_container">
+
+                <div class="re_counters">
+                    <span class="re_numbers" id="hours">00</span>
+                    <span class="re_temp">Horas</span>
+                </div>
+
+                <div class="re_counters">
+                    <span class="re_numbers" id="minutes">00</span>
+                    <span class="re_temp">Minutos</span>
+                </div>
+
+                <div class="re_counters">
+                    <span class="re_numbers" id="seconds">00</span>
+                    <span class="re_temp">Segundos</span>
                 </div>
             </div>
+        </div>
+        
+    </section>
+
+    <section class="cronometro" id="cronometro">
+        <div class="title">
+            <h1 class="re_title">cronometro</h1>             
+        </div>
+
+        <div class="cr_container">
+            <div class="cr_content">
+                <h2 id="timer">
+                    00:00:00:00
+                </h2>
+                <div class="control">
+                    <div class="actions">
+                        <button id="reset">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </button>
+                        <button id="power" action="start">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <button id="mark">
+                            <i class="fa-solid fa-thumbtack"></i>
+                        </button>
+                    </div>
             
-        </section>
+                    <div id="cr_marks_list"></div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </section>
+
     </main>
     <footer>
 
