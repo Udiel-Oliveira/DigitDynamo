@@ -138,7 +138,7 @@ body
     border-radius: 8px;
     box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
 }
-#timer
+.timer
 {
     display: flex;
     justify-content: center;
@@ -199,6 +199,7 @@ body
     font-family: 'K2D', sans-serif;
     font-weight: 500;
     max-height: 270px;
+    height: 270px;
     border-bottom: 2px solid white;
 }
 #cr_marks_list p
@@ -256,6 +257,7 @@ body
     .control
     {
         margin-left: 0rem;
+        overflow-y: hidden;
     }
 }
 @media(max-width: 500px)
@@ -283,6 +285,12 @@ body
     .title
     {
         width: 70%;
+    }
+
+    .timer
+    {
+        width: 250px;
+        font-size: 20px;
     }
 }
 
