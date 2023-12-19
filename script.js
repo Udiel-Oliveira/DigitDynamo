@@ -131,3 +131,45 @@ resetButton.addEventListener('click', () => {
 
 document.addEventListener('mouseup', () => clearInterval(intervalIdcon));
 
+
+const form = document.getElementById('forms');
+
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const weight = document.getElementById('Peso').values;
+    const height = document.getElementById('Alt').values;
+    
+    const bmi = (weight / (height * height)).toFixed(2);
+
+    const values = document.getElementById('value2');
+    let description = '';
+
+    document.getElementById('infos1').classList.remove('hidden');
+
+    if (bmi < 18.5) {
+        description = 'Cuidado! Você está abaixo do peso!';
+    }else if(bmi>=18.5 && bmi <= 25)
+    {
+        description = 'Wow! Você está no peso ideial!';
+    }else if(bmi > 25 && bmi <= 30)
+    {
+        description = 'Cuidado! você está com sobrepeso!';
+    }
+    else if(bmi > 30 && bmi <= 35)
+    {
+        description = 'Cuidado! você está com obesidade moderada!';
+    }
+    else if(bmi > 35 && bmi <= 40)
+    {
+        description = 'Cuidado! você está com obesidade severa!';
+    } else 
+    {
+        description = 'Cuidado! você está com obesidade morbida!';
+    }
+
+    values.textContent = bmi.replace('.', ',');
+    document.getElementById('description').textContent = description;
+
+});
