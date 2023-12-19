@@ -31,15 +31,19 @@ body
     width: 100%;
     background-color: var(--blue-primary);
 }
-.relogio
+.relogio, .cronometro, .contador
 {
     height: 100vh;
     width: 100%;
-    background: var(--blue-primary);
+    background-color: var(--blue-primary);
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
 }
+/*---------------------------------RELOGIO---------------------------------*/
+
 .re_content, .cr_container
 {
-    height: 75vh;
+    height: 80%;
     flex-direction: column;
     width: 100%;
     background: var(--blue-primary);
@@ -50,16 +54,9 @@ body
 .title
 {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 5px 20px;
-    width: 50%;
-    overflow-y: hidden;
-    border-radius: 0px 100px 100px 0px;
-    background: linear-gradient(to left, var(--blue-secondary), var(--blue-primary));
-    box-shadow: 15px 15px 20px 5px rgba(0, 0, 0, 0.3);
+    height: 20%;
 }
 .re_title
 {
@@ -69,6 +66,15 @@ body
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 5px 20px;
+    width: 50%;
+    overflow-y: hidden;
+    border-radius: 0px 100px 100px 0px;
+    background: linear-gradient(to left, var(--blue-secondary), var(--blue-primary));
+    box-shadow: 15px 15px 20px 5px rgba(0, 0, 0, 0.3);
 }
 
 .re_container
@@ -118,14 +124,8 @@ body
 }
 
 
+/*-----------------------------CRONOMETRO---------------------------------*/
 
-.cronometro
-{
-    height: 100vh;
-    width: 100%;
-    background: var(--blue-primary);
-    
-}
 
 .cr_content
 {
@@ -171,7 +171,6 @@ body
     height: 40px;
     align-items: center;
     justify-content: center;
-    padding: .6rem;
     font-size: 1rem;
     border-radius: 4px;
     border: none;
@@ -206,7 +205,89 @@ body
 {
     margin-bottom: 5px;
     background: linear-gradient(to right, black, transparent);
-    
+}
+/*-----------------------------CONTADOR---------------------------------*/
+
+.con_container
+{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con_content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 2rem;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    padding: 2rem;
+    background: linear-gradient(280deg, var(--blue-secondary), var(--blue-primary));
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+.quantityControl
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
+}
+#value
+{
+    font-size: 10rem;
+    color: white;
+    max-width: 55%;
+    text-align: center;
+}
+.con_content button
+{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 15px 15px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.count_button
+{
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    margin-right: 1rem;
+    background-color: black;
+    transition: all .4s ease-in-out;
+}
+.count_button:hover
+{
+    transform: scale(1.05);
+    background-color: var(--blue-secondary);
+}
+.count_button:last-child
+{
+    margin-right: 0rem;
+    margin-left: 1rem;
+    z-index: 10;
+    position:sticky;
+}
+#resete
+{
+    width: 100%;
+    font-size: 30px;
+    padding: 1.5rem;
+    transition: all .4s ease-in-out;
+}
+#resete:hover
+{
+    background-color: var(--blue-secondary);
 }
 
 
@@ -218,6 +299,30 @@ body
 
 
 
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar
+{
+    background-color: var(--blue-secondary);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--blue-smoth);
+    border-radius: 40px;
+}
+
+
+
+/*
 @media(max-width: 880px)
 {
     .re_container
@@ -241,7 +346,7 @@ body
     }
 
     /*Cronometro*/
-
+/*
     .cr_content
     {
         width: 90%;
@@ -260,6 +365,7 @@ body
         overflow-y: hidden;
     }
 }
+
 @media(max-width: 500px)
 {
     .re_content
@@ -289,36 +395,9 @@ body
 
     .timer
     {
-        width: 250px;
+        width: 200px;
         font-size: 20px;
     }
-}
-
-.tooltip {
-    position: relative;
-    cursor: pointer;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 500px;
-    font-family: 'K2D', sans-serif;
-    background-color: #000000;
-    color: #fff;
-    border: 2px solid white;
-    padding: 5px;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 10;
-    bottom: 100%;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-    transition: all 0.5s ease;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
 }
 
 

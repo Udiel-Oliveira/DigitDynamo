@@ -85,3 +85,49 @@ document.getElementById('power').addEventListener('click', toggleTimer);
 document.getElementById('mark').addEventListener('click', markTime);
 document.getElementById('reset').addEventListener('click', resetTimer);
 
+
+
+const markAnimation = document.getElementById('marka');
+
+markAnimation.addEventListener('click', function(){
+    this.classList.toggle('descer');
+});
+
+
+
+const valor = document.getElementById('value');
+const plusButton = document.getElementById('plus');
+const minusButton = document.getElementById('minus');
+const resetButton = document.getElementById('resete');
+
+let contador = 0;
+let intervalIdcon = 0;
+
+const updateValue = () => {
+    valor.innerHTML = contador
+}
+
+plusButton.addEventListener('mousedown', () => {
+    intervalIdcon = setInterval(() => {
+        contador +=1;
+        updateValue();
+    }, 100);
+});
+
+document.addEventListener('mouseup', () => clearInterval(intervalIdcon));
+
+
+minusButton.addEventListener('mousedown', () => {
+    intervalIdcon = setInterval(() => {
+        contador -=1;
+        updateValue();
+    }, 100);
+});
+
+resetButton.addEventListener('click', () => {
+    contador = 0;
+    updateValue();
+});
+
+document.addEventListener('mouseup', () => clearInterval(intervalIdcon));
+
