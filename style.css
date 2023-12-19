@@ -31,16 +31,7 @@ body
     width: 100%;
     background-color: var(--blue-primary);
 }
-.relogio, .cronometro, .contador
-{
-    height: 100vh;
-    width: 100%;
-    background-color: var(--blue-primary);
-    font-family: 'K2D', sans-serif;
-    font-weight: 500;
-    display: none;
-}
-.calculator_imc
+.relogio, .cronometro, .contador,.calculator_imc
 {
     height: 100vh;
     width: 100%;
