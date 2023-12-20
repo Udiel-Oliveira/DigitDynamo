@@ -223,7 +223,7 @@ function copiar(){
 
     navigator.clipboard.writeText(inputUrl.value);
 
-    alert(`URL copiado ${inputUrl.value}`)
+    alert(`URL copiada com sucesso ${inputUrl.value}`)
 }
 
 
