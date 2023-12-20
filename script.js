@@ -215,6 +215,7 @@ function encurtarURL ()
      });
 };
 
+
 function copiar(){
     let inputUrl = document.getElementById('input_enc');
     
