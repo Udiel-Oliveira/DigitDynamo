@@ -132,6 +132,7 @@ resetButton.addEventListener('click', () => {
 document.addEventListener('mouseup', () => clearInterval(intervalIdcon));
 
 
+
 const form = document.getElementById('forms');
 
 
@@ -167,9 +168,19 @@ form.addEventListener('submit', function(event) {
     } else 
     {
         description = 'Cuidado! você está com obesidade morbida!';
-    }
+    };
 
     values.textContent = bmi.replace('.', ',');
     document.getElementById('description').textContent = description;
 
 });
+
+
+/*encurtador de link*/
+
+
+
+
+
+
+

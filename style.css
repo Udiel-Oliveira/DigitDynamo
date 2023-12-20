@@ -31,7 +31,16 @@ body
     width: 100%;
     background-color: var(--blue-primary);
 }
-.relogio, .cronometro, .contador,.calculator_imc
+.relogio, .cronometro, .contador
+{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--blue-primary);
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
+    display: none;
+}
+.encurtador_link,.calculator_imc
 {
     height: 100vh;
     width: 100%;
@@ -39,6 +48,7 @@ body
     font-family: 'K2D', sans-serif;
     font-weight: 500;
 }
+
 /*---------------------------------RELOGIO---------------------------------*/
 
 .re_content, .cr_container
@@ -301,7 +311,6 @@ body
     height: 80%;
     width: 100%;
     gap: 3.5rem;
-
 }
 
 .IMC_content
@@ -315,7 +324,6 @@ body
     background: linear-gradient(280deg, var(--blue-secondary), var(--blue-primary));
     border-radius: 20px;
     box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
-    
 }
 .IMC_content form
 {
@@ -440,6 +448,127 @@ body
 {
     display: none;
 }
+
+/*-----------------------------CALCULADORA IMC---------------------------------*/
+
+
+.input_enc_box label
+{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+}
+
+
+.encurtador_link
+{
+    
+}
+.container_enc
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    gap: 3.5rem;
+}
+.content_enc
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 5rem;
+    background: linear-gradient(280deg, var(--blue-secondary), var(--blue-primary));
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.input_enc_field
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    background-color: black;
+    margin-top: 3px;
+    border-radius:  0px 0px 0px 20px;
+}
+.input_enc_field span,
+.input_enc_field i
+{
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+
+.input_enc::-webkit-outer-spin-button,
+.input_enc::-webkit-inner-spin-button
+{
+    appearance: none;
+}
+.input_enc:focus
+{
+    outline: none;
+}
+.input_enc
+{
+    background-color: black;
+    border: none;
+    font-size: 1.3rem;
+    width: 100%;
+    color: white;
+    padding: 0.8rem;
+    border-radius:  20px 0px 0px 20px;
+}
+.btn_enc
+{
+    padding: 1.3rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: black;
+    border: none;
+    color: white;
+    border-left: 2px solid var(--blue-primary);
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn_enc:hover
+{
+    animation: animation 2s infinite ease-in-out;
+}
+.btn_enc:last-child
+{
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+
+
+
+
+@keyframes animation {
+    0%{
+        border-left: 2px solid var(--blue-primary);
+        background-color: var(--blue-primary);
+    }
+    50%
+    {
+        background-color: var(--blue-secondary);
+    }
+    100%
+    {
+        background-color: var(--blue-smoth);
+        background-color: var(--blue-primary);
+    }
+}
+
+
+
 
 
 
