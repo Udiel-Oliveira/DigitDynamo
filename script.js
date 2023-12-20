@@ -178,7 +178,53 @@ form.addEventListener('submit', function(event) {
 
 /*encurtador de link*/
 
+function encurtarURL ()
+{
+    let url = document.getElementById('input_enc').value;
 
+    if(!url){
+        alert("É preciso inserir uma URL pra encurtar")
+    };
+
+
+    // api key: 59053b7db31e47e19b0b9cd9e6deb564
+
+    //header
+    let headers = {
+        "Content-Type": "application/json",
+        "apikey": "59053b7db31e47e19b0b9cd9e6deb564"
+    }
+    //dados
+    let linkRequest = {
+        destination: url,
+        domain: { fullName: "rebrand.ly" }
+    }
+
+    fetch("https://api.rebrandly.com/v1/links",
+        {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(linkRequest)
+        }
+    ).then(Response => Response.json())
+     .then(json => {
+        console.log(json);
+        
+        let inputUrl = document.getElementById('input_enc');
+        inputUrl.value = json.shortUrl;
+     });
+};
+
+function copiar(){
+    let inputUrl = document.getElementById('input_enc');
+    
+    inputUrl.select();
+    inputUrl.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(inputUrl.value);
+
+    alert(`URL copiado ${inputUrl.value}`)
+}
 
 
 
